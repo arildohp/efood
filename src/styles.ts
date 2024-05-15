@@ -1,9 +1,9 @@
 import styled, { createGlobalStyle } from 'styled-components'
 
 export const cores = {
-  cor_fundo: '#FFF8F2',
-  cor_principal: '#E66767',
-  cor_secundaria: '#FFEBD9',
+  laranja_claro: '#FFF8F2',
+  laranja_escuro: '#E66767',
+  laranja_medio: '#FFEBD9',
   branco: '#EEE'
 }
 
@@ -16,8 +16,8 @@ export const GlobalCss = createGlobalStyle`
   }
 
   body {
-    background-color: ${cores.cor_fundo};
-    color: ${cores.cor_principal};
+    background-color: ${cores.laranja_medio};
+    color: ${cores.laranja_escuro};
   }
 `
 
