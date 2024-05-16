@@ -10,6 +10,8 @@ const ProductList = () => (
         <Product />
         <Product />
         <Product />
+        <Product />
+        <Product />
       </List>
     </div>
   </Container>

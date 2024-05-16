@@ -3,10 +3,10 @@ import { Informacao, Card, Titulo, Descricao, Botao } from './styles'
 
 const Product = () => (
   <Card>
-    <img src="//placehold.it/472x217" />
     <Informacao>
+      <img src="//placehold.it/472x217" />
       <div className="container">
-        <Titulo>nome do prato</Titulo>
+        <Titulo>Hioki Sushi</Titulo>
         <img src="//placehold.it/55x21" />
       </div>
       <Descricao>
@@ -15,7 +15,7 @@ const Product = () => (
         rápida, embalagens cuidadosas e qualidade garantida.Experimente o Japão
         sem sair do lar com nosso delivery!
       </Descricao>
-      <Botao>saiba mais</Botao>
+      <Botao>Saiba mais</Botao>
     </Informacao>
   </Card>
 )

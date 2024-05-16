@@ -23,6 +23,7 @@ export const Titulo = styled.h3`
   font-size: 18px;
   font-weight: 700;
   line-height: 21.09px;
+  margin: 7px;
 `
 
 export const Descricao = styled.p`
@@ -35,7 +36,8 @@ export const Descricao = styled.p`
   left: 179px;
   margim-top: 16px;
   background-color: ${cores.branco};
-  border: 0px, 1px, 1px, 1px;
+  border: ${cores.laranja_escuro};
+  margin: 7px;
 `
 export const Botao = styled.button`
   background-color: ${cores.laranja_escuro};
@@ -43,4 +45,7 @@ export const Botao = styled.button`
   width: 82px;
   height: 24px;
   font-size: 14px;
+  border: none;
+  margin-top: 10px;
+  margin: 7px;
 `
