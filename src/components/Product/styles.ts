@@ -1,16 +1,14 @@
 import styled from 'styled-components'
 import { cores } from '../../styles'
 
-export const Body = styled.main`
-  background-color: ${cores.laranja_claro};
-  display: flex;
-  align-items: center;
+export const Informacao = styled.div`
+  background-color: ${cores.branco};
+  gap: 0px;
 `
 
 export const Card = styled.div`
-  background-color: ${cores.branco};
-  max-width: 1024px;
-
+  margin-bottom: 32px;
+  max-width: 472px;
   .container {
     position: relative;
     display: flex;
@@ -36,4 +34,13 @@ export const Descricao = styled.p`
   top: 702px;
   left: 179px;
   margim-top: 16px;
+  background-color: ${cores.branco};
+  border: 0px, 1px, 1px, 1px;
+`
+export const Botao = styled.button`
+  background-color: ${cores.laranja_escuro};
+  color: ${cores.laranja_claro};
+  width: 82px;
+  height: 24px;
+  font-size: 14px;
 `

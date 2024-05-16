@@ -1,10 +1,10 @@
 import Tag from '../Tag'
-import { Body, Card, Titulo, Descricao } from './styles'
+import { Informacao, Card, Titulo, Descricao, Botao } from './styles'
 
 const Product = () => (
-  <Body>
-    <Card>
-      <img src="//placehold.it/472x217" />
+  <Card>
+    <img src="//placehold.it/472x217" />
+    <Informacao>
       <div className="container">
         <Titulo>nome do prato</Titulo>
         <img src="//placehold.it/55x21" />
@@ -15,9 +15,9 @@ const Product = () => (
         rápida, embalagens cuidadosas e qualidade garantida.Experimente o Japão
         sem sair do lar com nosso delivery!
       </Descricao>
-      <button>saiba mais</button>
-    </Card>
-  </Body>
+      <Botao>saiba mais</Botao>
+    </Informacao>
+  </Card>
 )
 
 export default Product

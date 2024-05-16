@@ -1,6 +1,8 @@
 import styled from 'styled-components'
+import { cores } from '../../styles'
 
 export const Hero = styled.header`
+  background-color: ${cores.laranja_medio};
   height: 384px;
   display: flex;
   align-items: center;
