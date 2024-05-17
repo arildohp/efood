@@ -1,7 +1,8 @@
 import styled from 'styled-components'
 import { cores } from '../../styles'
+import { Props } from '.'
 
-export const Container = styled.section`
+export const Container = styled.section<Omit<Props, 'cardapios'>>`
   background-color: ${cores.laranja_claro};
   padding: 32px;
   padding-top: 64px;

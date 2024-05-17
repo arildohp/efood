@@ -7,13 +7,16 @@ export const Informacao = styled.div`
 `
 
 export const Card = styled.div`
-  margin-bottom: 32px;
   max-width: 472px;
   position: relative;
+  margin-bottom: 32px;
   .container {
     position: relative;
     display: flex;
     justify-content: space-between;
+    height: 21px;
+    margin-bottom: 32px;
+    margin-right: 6px;
   }
 `
 
@@ -43,6 +46,7 @@ export const Descricao = styled.p`
 export const Botao = styled.button`
   background-color: ${cores.laranja_escuro};
   color: ${cores.laranja_claro};
+  weight: 700;
   width: 82px;
   height: 24px;
   font-size: 14px;
@@ -55,7 +59,7 @@ export const Botao = styled.button`
 export const Border = styled.div`
   border-style: solid;
   border-color: ${cores.laranja_escuro};
-  border-top: 0px;
+  border-top: none;
 `
 
 export const Infos = styled.div`
