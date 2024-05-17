@@ -9,6 +9,7 @@ export const Informacao = styled.div`
 export const Card = styled.div`
   margin-bottom: 32px;
   max-width: 472px;
+  position: relative;
   .container {
     position: relative;
     display: flex;
@@ -48,4 +49,17 @@ export const Botao = styled.button`
   border: none;
   margin-top: 10px;
   margin: 7px;
+  cursor: pointer;
+`
+
+export const Border = styled.div`
+  border-style: solid;
+  border-color: ${cores.laranja_escuro};
+  border-top: 0px;
+`
+
+export const Infos = styled.div`
+  position: absolute;
+  top: 14px;
+  right: 14px;
 `

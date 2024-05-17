@@ -6,12 +6,49 @@ const ProductList = () => (
   <Container>
     <div className="container2">
       <List>
-        <Product />
-        <Product />
-        <Product />
-        <Product />
-        <Product />
-        <Product />
+        <Product
+          title={'Hioki Sushi '}
+          infos={['Japonesa']}
+          descryption={'teste'}
+          image={'//placehold.it/472x217'}
+          imageNota={'//placehold.it/55x21'}
+          destaque={'destaque da semana'}
+        />
+        <Product
+          title={'La Dolce Vita Trattoria'}
+          infos={['Italiana']}
+          descryption={'teste'}
+          image={'//placehold.it/472x217'}
+          imageNota={'//placehold.it/55x21'}
+        />
+        <Product
+          title={'Hioki Sushi '}
+          infos={['Japonesa']}
+          descryption={'teste'}
+          image={'//placehold.it/472x217'}
+          imageNota={'//placehold.it/55x21'}
+        />
+        <Product
+          title={'La Dolce Vita Trattoria'}
+          infos={['Italiana']}
+          descryption={'teste'}
+          image={'//placehold.it/472x217'}
+          imageNota={'//placehold.it/55x21'}
+        />
+        <Product
+          title={'La Dolce Vita Trattoria'}
+          infos={['Italiana']}
+          descryption={'teste'}
+          image={'//placehold.it/472x217'}
+          imageNota={'//placehold.it/55x21'}
+        />
+        <Product
+          title={'La Dolce Vita Trattoria'}
+          infos={['Italiana']}
+          descryption={'teste'}
+          image={'//placehold.it/472x217'}
+          imageNota={'//placehold.it/55x21'}
+        />
       </List>
     </div>
   </Container>
