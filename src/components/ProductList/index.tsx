@@ -12,7 +12,7 @@ const ProductList = () => (
           descryption={'teste'}
           image={'//placehold.it/472x217'}
           imageNota={'//placehold.it/55x21'}
-          destaque={'destaque da semana'}
+          destaques={'destaque da semana'}
         />
         <Product
           title={'La Dolce Vita Trattoria'}

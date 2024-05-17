@@ -14,7 +14,7 @@ export const Text = styled.h1`
   font-family: Roboto;
   font-size: 36px;
   font-weight: 900;
-  line-height: 42.19px;
+  line-height: 42px;
   text-align: center;
   width: 539px;
   height: 84px;

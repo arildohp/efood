@@ -15,14 +15,22 @@ type Props = {
   descryption: string
   image: string
   imageNota: string
-  destaque?: string
+  destaques?: string
 }
 
-const Product = ({ title, infos, descryption, image, imageNota }: Props) => (
+const Product = ({
+  title,
+  infos,
+  descryption,
+  image,
+  imageNota,
+  destaques
+}: Props) => (
   <Card>
     <Informacao>
       <img src={image} alt={title} />
       <Infos>
+        <Tag>{destaques}</Tag>
         {infos.map((info) => (
           <Tag key={info}>{info}</Tag>
         ))}
