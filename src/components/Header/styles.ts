@@ -20,7 +20,7 @@ export const Text = styled.h1`
   height: 84px;
   margin-top: 236px;
 `
-export const Image = styled.img`
+export const Image = styled.div`
   display: flex;
   width: 125px;
   height: 57.5px;
