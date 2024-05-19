@@ -6,7 +6,7 @@ import logo from '../../assets/image/logo.svg'
 const Header = () => (
   <Hero>
     <Image>
-      <Link to={logo}>
+      <Link to={'/restaurant'}>
         <img src={logo} alt="Efood" />
       </Link>
     </Image>
