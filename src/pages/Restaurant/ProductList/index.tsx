@@ -9,6 +9,9 @@ const ProductList = () => (
         <Products />
         <Products />
         <Products />
+        <Products />
+        <Products />
+        <Products />
       </List>
     </Containers>
   </Container>

@@ -11,6 +11,7 @@ import { GlobalCss } from './styles'
 import Home from './pages/Homes'
 import Restaurant from './pages/Restaurant'
 import Banner from './components/Banner'
+import Footer from './components/Footer'
 
 const Rotas = () => (
   <Routes>
@@ -21,13 +22,16 @@ const Rotas = () => (
 
 function App() {
   return (
-    <BrowserRouter>
-      <GlobalCss />
-      <div className="container">
-        <Header />
-      </div>
-      <Rotas />
-    </BrowserRouter>
+    <>
+      <BrowserRouter>
+        <GlobalCss />
+        <div className="container">
+          <Header />
+        </div>
+        <Rotas />
+        <Footer />
+      </BrowserRouter>
+    </>
   )
 }
 
