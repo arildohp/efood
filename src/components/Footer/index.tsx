@@ -1,25 +1,25 @@
 import { Container } from '../../styles'
 import logo from '../../assets/image/logo.svg'
 import redesSociais from '../../assets/image/redesSociais.png'
-import { Rodape, Informacao } from './styles'
+import { Rodape, Informacao, Descricao } from './styles'
 
 const Footer = () => (
   <Rodape>
     <Container>
       <Informacao>
-        <div>
+        <li>
           <img src={logo} alt="" />
-        </div>
-        <div>
-          <img src={redesSociais} alt="" />
-        </div>
-        <div>
-          <p>
+        </li>
+        <li>
+          <img className="image" src={redesSociais} alt="" />
+        </li>
+        <li>
+          <Descricao>
             A efood é uma plataforma para divulgação de estabelecimentos, a
             responsabilidade pela entrega, qualidade dos produtos é toda do
             estabelecimento contratado.{' '}
-          </p>
-        </div>
+          </Descricao>
+        </li>
       </Informacao>
     </Container>
   </Rodape>

@@ -1,29 +1,26 @@
 import styled from 'styled-components'
 
-export const Rodape = styled.div`
+export const Rodape = styled.section`
   display: flex;
   height: 298px;
-  align-items: center;
 `
 
-export const Informacao = styled.div`
-  display: flex;
-  align: center;
+export const Informacao = styled.ul`
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 298px;
+  align-items: center;
 
-  p {
-    font-family: Roboto;
-    font-size: 10px;
-    font-weight: 400;
-    line-height: 11.72px;
-    text-align: center;
+  li{
+    display: flex:
+    justify-content: center;
   }
-
-  img {
-    width: 125px;
-    height: 57.5px;
-    top: 1890px;
-    left: 621px;
-    gap: 0px;
-    opacity: 0px;
-  }
+`
+export const Descricao = styled.p`
+  height: 24px;
+  width: 480px;
+  font-family: Roboto;
+  font-size: 10px;
+  font-weight: 400;
+  text-align: center;
 `

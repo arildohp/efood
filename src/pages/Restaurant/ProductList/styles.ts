@@ -1,7 +1,10 @@
 import styled from 'styled-components'
+import { cores } from '../../../styles'
 
 export const Container = styled.section`
   padding-top: 50px;
+  background-color: ${cores.laranja_claro};
+  padding-bottom: 100px;
 `
 
 export const List = styled.ul`
