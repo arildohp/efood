@@ -12,7 +12,7 @@ const Products = () => (
           A clássica Marguerita: molho de tomate suculento, mussarela derretida,
           manjericão fresco e um toque de azeite. Sabor e simplicidade!
         </p>
-        <Botao>Adicionar ao carrinho</Botao>
+        <Botao>Mais detalhes</Botao>
       </div>
     </Cards>
   </Fundo>
