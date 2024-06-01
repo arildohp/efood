@@ -10,8 +10,7 @@ const Products = () => (
         <Titulo> Pizza Marguerita</Titulo>
         <p>
           A clássica Marguerita: molho de tomate suculento, mussarela derretida,
-          derretida, derretida, derretida, derretida, derretida, fresco e um
-          azeite. Sabor simplicidade!
+          manjericão fresco e um toque de azeite. Sabor e simplicidade!
         </p>
         <Botao>Adicionar ao carrinho</Botao>
       </div>
