@@ -10,7 +10,6 @@ import Header from './components/Header'
 import { GlobalCss } from './styles'
 import Home from './pages/Homes'
 import Restaurant from './pages/Restaurant'
-import Banner from './components/Banner'
 import Footer from './components/Footer'
 
 const Rotas = () => (

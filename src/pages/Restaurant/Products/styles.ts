@@ -38,4 +38,5 @@ export const Botao = styled.button`
   font-bold;
   font-size: 14px;
   border: none;
+  cursor: pointer;
 `
