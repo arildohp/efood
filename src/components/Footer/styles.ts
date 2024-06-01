@@ -7,7 +7,7 @@ export const Rodape = styled.section`
 export const Informacao = styled.div`
   display: flex;
   align-item: center;
-  padding: 50px 0;
+  padding: 40px 0;
 `
 export const Descricao = styled.p`
   height: 24px;
