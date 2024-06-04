@@ -17,3 +17,40 @@ export const Containers = styled.div`
   width: 100%;
   margin: 0 auto;
 `
+
+export const Modal = styled.section`
+  color: ${cores.laranja_claro};
+  background-color: ${cores.laranja_escuro};
+  height: 344px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px;
+
+  img {
+    width: 280px;
+    height: 100%;
+  }
+
+  div {
+    margin: 20px;
+  }
+
+  h3 {
+    font-size: 18px;
+    font-weight: 900;
+    height: 21px;
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    padding-top: 32px;
+  }
+
+  Botao {
+    width: 218px;
+    height: 24px;
+  }
+`
