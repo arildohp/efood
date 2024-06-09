@@ -2,13 +2,24 @@ import { styled } from 'styled-components'
 import { cores } from '../../../styles'
 
 export const Modall = styled.div`
-  color: ${cores.laranja_claro};
-  background-color: ${cores.laranja_escuro};
-  height: 344px;
-  position: fixed;
   width: 100%;
   top: 0;
   left: 0;
+  position: fixed;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.73);
+  }
 
   h3 {
     font-size: 18px;
@@ -51,17 +62,25 @@ export const Information = styled.div`
   }
 `
 export const ModalContent = styled.div`
-  max-width: 1024px;
+  color: ${cores.laranja_claro};
+  background-color: ${cores.laranja_escuro};
+  height: 344px;
+  position: relative;
+  z-index: 1;
 
   header {
+    margin-top: 0;
     display: flex;
-    height: 16px;
-    display: flex;
-    margin-top: 16px;
-  }
+    width: 100%;
+    align-items: center;
+    height: 32px;
+    justify-content: right;
 
   img {
     display: block;
     max-width: 100%;
+    margin-right: 8px;
   }
+
+
 `

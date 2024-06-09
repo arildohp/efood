@@ -67,4 +67,8 @@ export const Infos = styled.div`
   top: 14px;
   right: 14px;
   display: flex;
+
+  div {
+    margin-left: 4px;
+  }
 `

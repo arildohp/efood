@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import Tag from '../Tag'
 import {
   Informacao,
@@ -30,10 +31,14 @@ const Product = ({
     <Informacao>
       <img src={image} alt={title} />
       <Infos>
-        <Tag>{destaques}</Tag>
-        {infos.map((info) => (
-          <Tag key={info}>{info}</Tag>
-        ))}
+        <div>
+          <Tag>{destaques}</Tag>
+        </div>
+        <div>
+          {infos.map((info) => (
+            <Tag key={info}>{info}</Tag>
+          ))}
+        </div>
       </Infos>
       <Border>
         <div className="container">
@@ -41,7 +46,9 @@ const Product = ({
           <img src={imageNota} />
         </div>
         <Descricao>{descryption}</Descricao>
-        <Botao>Saiba mais</Botao>
+        <Link to={'/restaurant'}>
+          <Botao>Saiba mais</Botao>
+        </Link>
       </Border>
     </Informacao>
   </Card>
