@@ -17,7 +17,7 @@ const ProductList = () => (
         <Products />
       </List>
     </Containers>
-    <Modal />
+    <Modal name={'Pizza Marguerita'} />
   </Container>
 )
 

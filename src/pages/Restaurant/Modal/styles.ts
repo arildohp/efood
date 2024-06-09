@@ -12,6 +12,10 @@ export const Modall = styled.div`
   align-items: center;
   justify-content: center;
 
+  &.visible {
+    display: flex;
+  }
+
   .overlay {
     position: absolute;
     top: 0;
@@ -38,7 +42,7 @@ export const Modall = styled.div`
   }
 `
 export const Botao = styled.button`
-  width: 218px;
+  width: 230px;
   height: 24px;
   background-color: ${cores.laranja_medio};
   color: ${cores.laranja_escuro};
