@@ -31,9 +31,7 @@ const Product = ({
     <Informacao>
       <img src={image} alt={title} />
       <Infos>
-        <div>
-          <Tag>{destaques}</Tag>
-        </div>
+        <div>{destaques && <Tag>{destaques}</Tag>}</div>
         <div>
           {infos.map((info) => (
             <Tag key={info}>{info}</Tag>
