@@ -1,10 +1,4 @@
-import {
-  createBrowserRouter,
-  RouterProvider,
-  BrowserRouter,
-  Routes,
-  Route
-} from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import Header from './components/Header'
 import { GlobalCss } from './styles'
@@ -15,7 +9,15 @@ import Product from './pages/Product'
 
 const Rotas = () => (
   <Routes>
-    <Route path="/" element={<Home />} />
+    <Route
+      path="/"
+      element={
+        <>
+          <Header />
+          <Home />
+        </>
+      }
+    />
     <Route path="/restaurant" element={<Restaurant />} />
     <Route path="/product/:id" element={<Product />} />
   </Routes>
@@ -27,9 +29,8 @@ function App() {
       <BrowserRouter>
         <GlobalCss />
         <div className="container">
-          <Header />
+          <Rotas />
         </div>
-        <Rotas />
         <Footer />
       </BrowserRouter>
     </>

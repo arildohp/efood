@@ -6,7 +6,6 @@ export const Rodape = styled.section`
 
 export const Informacao = styled.div`
   display: flex;
-  align-item: center;
   padding: 40px 0;
 `
 export const Descricao = styled.p`
@@ -16,12 +15,14 @@ export const Descricao = styled.p`
   font-size: 10px;
   font-weight: 400;
   text-align: center;
+  margin: 0;
 `
 export const Logo = styled.div`
   width: 125px;
   height: 57.5px;
   margin-left: 450px;
   display: flex;
+  justify-content: center;
 `
 export const RedesSociais = styled.div`
   width: 88px;
