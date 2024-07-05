@@ -12,16 +12,16 @@ import {
 
 type Props = {
   title: string
-  infos: string[]
+  pais: string
   descryption: string
   image: string
   imageNota: string
-  destaques?: string
+  destaques: string[]
 }
 
 const Product = ({
   title,
-  infos,
+  pais,
   descryption,
   image,
   imageNota,
@@ -31,12 +31,14 @@ const Product = ({
     <Informacao>
       <img src={image} alt={title} />
       <Infos>
-        <div>{destaques && <Tag>{destaques}</Tag>}</div>
-        <div>
-          {infos.map((info) => (
-            <Tag key={info}>{info}</Tag>
-          ))}
-        </div>
+        <div>{pais && <Tag>{pais}</Tag>}</div>
+        {destaques.length > 0 && (
+          <div>
+            {destaques.map((Tag) => (
+              <span key={Tag}>{Tag}</span>
+            ))}
+          </div>
+        )}
       </Infos>
       <Border>
         <div className="container">

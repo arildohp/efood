@@ -1,5 +1,4 @@
 import { Hero, Text, Image } from './styles'
-import { Link } from 'react-router-dom'
 
 import logo from '../../assets/image/logo.svg'
 
