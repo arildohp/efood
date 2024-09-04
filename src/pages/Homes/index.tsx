@@ -4,12 +4,12 @@ import ProductList from '../../components/ProductList'
 
 export type Details = {
   id: number
-  title: string
-  emphasis: string
-  type: string
-  avaliation: string
-  description1: string
-  cover: string
+  titulo: string
+  destacado?: string
+  tipo: string
+  avaliacao: string
+  descricao: string
+  capa: string
   cardapio: {
     photo: string
     prices: string

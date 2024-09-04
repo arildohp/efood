@@ -9,7 +9,7 @@ export type Props = {
 
 const ProductList = ({ cardapios }: Props) => {
   const getDetailTags = (details: Details) => {
-    return details.emphasis ? [details.emphasis] : []
+    return details.destacado ? [details.destacado] : []
   }
 
   const destaques = cardapios.flatMap(getDetailTags)
@@ -21,16 +21,12 @@ const ProductList = ({ cardapios }: Props) => {
           {cardapios.map((details) => (
             <Product
               key={details.id}
-              title={details.title}
-              pais={details.type}
-              descryption={details.description1}
-              image={details.cover}
-              imageNota={details.avaliation}
-              destaques={
-                destaques.includes(details.emphasis)
-                  ? [details.emphasis ?? '']
-                  : []
-              }
+              title={details.titulo}
+              pais={details.tipo}
+              descryption={details.descricao}
+              image={details.capa}
+              avaliacao={details.avaliacao}
+              destaques={details.destacado ? ['Destaque'] : []}
             />
           ))}
         </List>

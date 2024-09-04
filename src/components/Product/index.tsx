@@ -15,7 +15,7 @@ type Props = {
   pais: string
   descryption: string
   image: string
-  imageNota: string
+  avaliacao: string
   destaques: string[]
 }
 
@@ -24,7 +24,7 @@ const Product = ({
   pais,
   descryption,
   image,
-  imageNota,
+  avaliacao,
   destaques
 }: Props) => (
   <Card>
@@ -43,7 +43,7 @@ const Product = ({
       <Border>
         <div className="container">
           <Titulo>{title}</Titulo>
-          <img src={imageNota} />
+          <h3>{avaliacao}</h3>
         </div>
         <Descricao>{descryption}</Descricao>
         <Link to={'/restaurant'}>
