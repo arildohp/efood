@@ -11,12 +11,12 @@ export type Details = {
   descricao: string
   capa: string
   cardapio: {
-    photo: string
-    prices: string
+    foto: string
+    preco: string
     id: number
-    name: string
-    description2: string
-    porsion: string
+    nome: string
+    descricao: string
+    porcao: string
   }
 }
 

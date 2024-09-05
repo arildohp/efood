@@ -13,7 +13,7 @@ const Restaurant = () => (
       </HeaderBar>
     </Container>
     <Banner />
-    <ProductList />
+    <ProductList cardapios= />
   </>
 )
 

@@ -2,19 +2,21 @@ import { Fundo, Cards, ListaCards, Titulo, Botao } from './styles'
 import pizza from '../../../assets/image/pizza.png'
 import { useState } from 'react'
 
-const Products = () => {
+type Props = {
+  nome: string
+  descricao: string
+  foto: string
+}
+
+const Products = ({ nome, descricao, foto }: Props) => {
   const [modalEstaAberto, setModalEstaAberto] = useState(false)
   return (
     <Fundo>
       <Cards>
         <div>
-          <img src={pizza} />
-          <Titulo> Pizza Marguerita</Titulo>
-          <p>
-            A clássica Marguerita: molho de tomate suculento, mussarela
-            derretida, manjericão fresco e um toque de azeite. Sabor e
-            simplicidade!
-          </p>
+          <img src={foto} />
+          <Titulo>{nome}</Titulo>
+          <p>{descricao}</p>
           <Botao onClick={() => setModalEstaAberto(true)}>Mais detalhes</Botao>
         </div>
       </Cards>
