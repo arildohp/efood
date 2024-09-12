@@ -46,7 +46,7 @@ const Product = ({
           <h3>{avaliacao}</h3>
         </div>
         <Descricao>{descryption}</Descricao>
-        <Link to={'/restaurant'}>
+        <Link to={'/restaurant/:id'}>
           <Botao>Saiba mais</Botao>
         </Link>
       </Border>

@@ -1,5 +1,4 @@
 import { Fundo, Cards, ListaCards, Titulo, Botao } from './styles'
-import pizza from '../../../assets/image/pizza.png'
 import { useState } from 'react'
 
 type Props = {

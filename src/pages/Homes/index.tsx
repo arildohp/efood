@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 
 import ProductList from '../../components/ProductList'
+import { useParams } from 'react-router-dom'
 
 export type Details = {
   id: number
@@ -21,13 +22,14 @@ export type Details = {
 }
 
 const Home = () => {
+  const { id } = useParams()
   const [restaurantes, setRestaurantes] = useState<Details[]>([])
 
   useEffect(() => {
     fetch('https://fake-api-tau.vercel.app/api/efood/restaurantes')
       .then((res) => res.json())
       .then((res) => setRestaurantes(res))
-  })
+  }, [id])
 
   return (
     <>
